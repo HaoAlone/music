@@ -93,7 +93,7 @@ ulList.addEventListener('click',function (e) {
 //发送请求获取json数据
 function getMusicList(callback) {
   var xhr = new XMLHttpRequest();
-  xhr.open('GET','/music.json',true)//本地使用
+  //xhr.open('GET','/music.json',true)//本地使用
   xhr.open('GET','https://easy-mock.com/mock/5ab850e58552c322befb8658/music',true)//easy-mock
 
   xhr.onload= function () {
