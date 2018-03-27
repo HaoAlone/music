@@ -99,7 +99,7 @@ function getMusicList(callback) {
       if((xhr.status>= 200 && xhr.status < 300) || xhr.status == 304){
         callback(JSON.parse(this.responseText))
       }else{
-        console.log("获取数据失败")
+        console.log(xhr.status+"获取数据失败")
       }
     }else {
       console.log("网络网络连接失败")
